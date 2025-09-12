@@ -158,8 +158,8 @@ try {
                     <input type="date" name="date_to" id="date_to" 
                            value="<?php echo isset($_GET['date_to']) ? htmlspecialchars($_GET['date_to']) : ''; ?>">
                     
-                    <button type="submit" class="filter-btn">Показать</button>
-                    <button type="button" class="reset-btn" onclick="setFullPeriod()">Вся посещаемость</button>
+                    <button type="submit" class="back-button">Показать</button>
+                    <button type="button" class="back-button" onclick="setFullPeriod()">Вся посещаемость</button>
                 </div>
             </form>
         </div>
@@ -230,6 +230,20 @@ try {
             .attendance-table tr:hover {
                 background-color: #e9ecef;
             }
+
+                .back-button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
         </style>
         <!-- Статистика посещаемости -->
     <div class="stats-container">
