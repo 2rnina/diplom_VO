@@ -27,6 +27,6 @@ if (isset($_SESSION['user_id'])) {
 
 // Перенаправляем пользователя на страницу авторизации
 // с сообщением об успешном выходе
-header("Location: html_desktop_authorization.php?logout=success");
+header("Location: index.php?logout=success");
 exit();
 ?>

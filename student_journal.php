@@ -192,7 +192,7 @@ try {
     
     if ($mark === 'НБ') {
         $markClass = 'mark-absent';
-    } elseif ($mark === 'П') {
+    } elseif ($mark === '5') {
         $markClass = 'mark-present';
     }
     ?>

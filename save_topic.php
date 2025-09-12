@@ -3,7 +3,7 @@ session_start();
 require_once 'db.php';
 
 if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'teacher') {
-    header('Location: html_desktop_authorization.php');
+    header('Location: index.php');
     exit();
 }
 

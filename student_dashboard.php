@@ -6,7 +6,7 @@ try {
     
     // Правильная проверка сессии
     if (!isset($_SESSION['entity_id']) || $_SESSION['role'] !== 'student') {
-        header('Location: html_desktop_authorization.php');
+        header('Location: index.php');
         exit();
     }
 
