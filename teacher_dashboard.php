@@ -83,13 +83,33 @@ try {
         .subject-item:hover {
             background-color: #f0f0f0;
         }
+        .page-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .page-title {
+            margin: 0;
+        }
+
+        .curatorship-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <div class="dashboard-container">
         <!-- Шапка страницы -->
-        <div class="page-header">
+       <div class="page-header">
             <h1 class="page-title">Личный кабинет преподавателя</h1>
+            <a href="curator_groups.php" class="curatorship-button">Кураторство</a>
         </div>
 
         <!-- Профиль преподавателя -->
@@ -116,6 +136,7 @@ try {
 
         <!-- Кнопка выхода -->
         <div class="logout-button-container">
+            
             <form action="logout.php" method="post">
                 <button type="submit" class="logout-button">Выход</button>
             </form>
